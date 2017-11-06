@@ -7,6 +7,17 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     public function homepage(){
-        return view('homepage');
+        return view('pages.homepage');
+    }
+
+    public function about(){
+        $halaman='about';
+        return view ('pages.about',compact('halaman'));
+    }
+
+    public function siswa(){
+        $halaman='siswa';
+        $siswa = ['Fauzi fadhillah','Fauzi','Gnateng'];
+        return view('siswa.index',compact('halaman','siswa'));
     }
 }

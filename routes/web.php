@@ -25,15 +25,8 @@ Route::get('homepage',function(){
 
 route::get('/','PagesController@homepage');
 
-route::get('about',function(){
-    $halaman='about';
-    return view ('about',compact('halaman'));
-});
+route::get('about','PagesController@about');
 
-route::get('siswa',function(){
-    $halaman='siswa';
-    $siswa = ['Fauzi fadhillah','Fauzi','Gnateng'];
-    return view('siswa.index',compact('halaman','siswa'));
-});
+route::get('siswa','PagesController@siswa');
 
 
