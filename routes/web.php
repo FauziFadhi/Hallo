@@ -27,6 +27,9 @@ route::get('/','PagesController@homepage');
 
 route::get('about','PagesController@about');
 
-route::get('siswa','PagesController@siswa');
+route::get('siswa','SiswaController@index');
 
+route::get('halaman_rahasia','RahasiaController@tampilRahasia')->name('rahasia');
+
+route::get('showmesecret','RahasiaController@showme');
 

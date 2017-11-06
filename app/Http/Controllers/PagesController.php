@@ -14,10 +14,4 @@ class PagesController extends Controller
         $halaman='about';
         return view ('pages.about',compact('halaman'));
     }
-
-    public function siswa(){
-        $halaman='siswa';
-        $siswa = ['Fauzi fadhillah','Fauzi','Gnateng'];
-        return view('siswa.index',compact('halaman','siswa'));
-    }
 }
